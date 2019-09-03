@@ -42,14 +42,13 @@
     "perfect-scrollbar": "1.4.0",
     "popper.js": "1.14.6",
     "rellax": "1.7.2",
-    "rxjs": "^6.3.3",
+    "rxjs": "^6.5.2",
     "rxjs-compat": "^6.5.2",
     "tslib": "^1.9.3",
     "web-animations-js": "2.3.1",
     "zone.js": "^0.8.29"
   },
   "devDependencies": {
-<<<<<<< HEAD
     "@angular-devkit/build-angular": "~0.12.3",
     "@angular/cli": "7.2.3",
     "@angular/compiler-cli": "7.2.2",
@@ -72,14 +71,5 @@
     "ts-node": "8.0.2",
     "tslint": "5.12.1",
     "typescript": "3.2.4"
-=======
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-clean": "^0.4.0",
-    "gulp-install": "^1.1.0",
-    "gulp-open": "^3.0.1",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4"
->>>>>>> 60c0306895e93d59dfef23f2128ae98db577803a
   }
 }
