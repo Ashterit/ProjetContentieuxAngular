@@ -14,13 +14,13 @@ export class RoleService {
   public getRole(id: number): Observable<any> {
     return this.httpClient.get('http://localhost:9090/roles/' + id);
   }
-  public saveUtilisateur(user: any): Observable<any> {
+  public saveRole(user: any): Observable<any> {
     return this.httpClient.post('http://localhost:9090/roles', user);
   }
-  public deleteUtilisateur(id: number): Observable<any> {
+  public deleteRole(id: number): Observable<any> {
     return this.httpClient.delete('http://localhost:9090/roles/' + id);
   }
-  public updateUtilisateur(user: any): Observable<any> {
+  public updateRole(user: any): Observable<any> {
     var userParse = JSON.parse(user);
     return this.httpClient.put('http://localhost:9090/roles/' + userParse.idRole, userParse);
   }
