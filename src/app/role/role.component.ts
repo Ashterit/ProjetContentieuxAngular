@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { RoleService } from 'app/service/role.service';
-import { Role } from 'app/model/role';
+import { Role } from '../model/role';
+import { RoleService } from '../service/role.service';
+
 
 @Component({
   selector: 'app-role',

@@ -1,21 +1,19 @@
 import { Routes } from '@angular/router';
-
-import { DashboardComponent } from '../../dashboard/dashboard.component';
-import { UserProfileComponent } from '../../user-profile/user-profile.component';
-import { TableListComponent } from '../../table-list/table-list.component';
-import { TypographyComponent } from '../../typography/typography.component';
-import { IconsComponent } from '../../icons/icons.component';
-import { MapsComponent } from '../../maps/maps.component';
-import { NotificationsComponent } from '../../notifications/notifications.component';
-import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import { RoleComponent } from 'src/app/role/role.component';
+import { LoginComponent } from 'src/app/login/login.component';
+import { UserProfileComponent } from 'src/app/user-profile/user-profile.component';
 
 export const AdminLayoutRoutes: Routes = [
-    { path: 'dashboard',      component: DashboardComponent },
+   /* { path: 'dashboard',      component: DashboardComponent }, */
+   { path: '',               redirectTo: '/login', pathMatch: 'full'},
     { path: 'user-profile',   component: UserProfileComponent },
-    { path: 'table-list',     component: TableListComponent },
+    { path: 'role',           component: RoleComponent },
+    {path: 'login',           component: LoginComponent}
+]
+ //   { path: 'affaire',              component: AffaireComponent},
+  /*  { path: 'table-list',     component: TableListComponent },
     { path: 'typography',     component: TypographyComponent },
     { path: 'icons',          component: IconsComponent },
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
-    { path: 'upgrade',        component: UpgradeComponent }
-];
+    { path: 'upgrade',        component: UpgradeComponent },*/
