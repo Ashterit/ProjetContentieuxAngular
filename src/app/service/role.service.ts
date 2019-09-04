@@ -9,16 +9,16 @@ export class RoleService {
 
   constructor(private httpClient: HttpClient) { }
   public getAllRole(): Observable<any> {
-    return this.httpClient.get('http://localhost:9090/roles').map(response => response);
+    return this.httpClient.get('http://localhost:9090/gestionCabinetAvocat/login/roles').map(response => response);
   }
   public getRole(id: number): Observable<any> {
-    return this.httpClient.get('http://localhost:9090/roles/' + id);
+    return this.httpClient.get('http://localhost:9090/gestionCabinetAvocat/login/roles/' + id);
   }
   public saveRole(user: any): Observable<any> {
-    return this.httpClient.post('http://localhost:9090/roles', user);
+    return this.httpClient.post('http://localhost:9090/gestionCabinetAvocat/login/roles', user);
   }
   public deleteRole(id: number): Observable<any> {
-    return this.httpClient.delete('http://localhost:9090/roles/' + id);
+    return this.httpClient.delete('http://localhost:9090/gestionCabinetAvocat/login/roles/' + id);
   }
   public updateRole(user: any): Observable<any> {
     var userParse = JSON.parse(user);

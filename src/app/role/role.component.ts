@@ -3,6 +3,7 @@ import { Role } from '../model/role';
 import { RoleService } from '../service/role.service';
 
 
+
 @Component({
   selector: 'app-role',
   templateUrl: './role.component.html',
