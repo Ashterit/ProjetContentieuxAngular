@@ -16,6 +16,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { LoginComponent } from '../../login/login.component';
 import { RoleComponent } from '../../role/role.component';
+import { TribunalComponent } from '../../role/tribunal.component';
 
 @NgModule({
   imports: [
@@ -33,6 +34,7 @@ import { RoleComponent } from '../../role/role.component';
     TypographyComponent,
     LoginComponent,
     RoleComponent,
+    TribunalComponent,
     IconsComponent,
     MapsComponent,
     NotificationsComponent,
