@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../service/utilisateur.service';
+
 import { AppService } from '../app.service';
-import { Utilisateur } from '../model/utilisateur';
+import { UserService } from '../service/user.service';
+import { User } from '../model/User';
+
 
 @Component({
   selector: 'app-utilisateur',
@@ -10,7 +12,7 @@ import { Utilisateur } from '../model/utilisateur';
 })
 export class UtilisateurComponent implements OnInit {
   utilisateurs:any[];
-  utilisateur: Utilisateur = new Utilisateur();
+  utilisateur: User = new User();
   constructor(private appService:AppService,private utilisateurService: UserService) { }
 
   authenticated() {
@@ -29,7 +31,7 @@ export class UtilisateurComponent implements OnInit {
 
   createUser() {
     this.utilisateurService.saveUtilisateur(this.utilisateur).subscribe(
-      () => {this.loadUser(); this.utilisateur = new Utilisateur();}
+      () => {this.loadUser(); this.utilisateur = new User();}
     )
   }
 }
