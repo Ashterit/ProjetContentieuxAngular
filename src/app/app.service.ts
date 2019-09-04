@@ -11,7 +11,7 @@ export class AppService {
     const headers = new HttpHeaders(credentials ? {
       authorization : 'Basic ' + btoa(credentials.username + ':' + credentials.password)
   } : {});
-  this.httpClient.get('http://localhost:9090/login/utilisateurs', {headers: headers}).subscribe(response => {
+  this.httpClient.get('http://localhost:9090/gestionCabinetAvocat/login/user', {headers: headers}).subscribe(response => {
 
      
       if (response['username']) {

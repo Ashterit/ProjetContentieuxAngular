@@ -9,7 +9,7 @@ export const AdminLayoutRoutes: Routes = [
   { path: '',               redirectTo: '/login', pathMatch: 'full'},
   { path: 'role',           component: RoleComponent },
   {path: 'login',           component: LoginComponent},
-  {path: 'user', component: UtilisateurComponent}
+  {path: 'utilisateurs', component: UtilisateurComponent}
 ]
   /*  { path: 'affaire',              component: AffaireComponent},
     { path: 'table-list',     component: TableListComponent },

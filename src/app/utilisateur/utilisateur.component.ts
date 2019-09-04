@@ -34,4 +34,10 @@ export class UtilisateurComponent implements OnInit {
       () => {this.loadUser(); this.utilisateur = new User();}
     )
   }
+  updateUser() {
+    this.utilisateurService.updateUtilisateur(this.utilisateur).subscribe(
+      data => {this.utilisateurs = data;},
+      error => {console.log(error);}
+    )
+  }
 }

@@ -15,6 +15,7 @@ import { RoleService } from './service/role.service';
 import { TribunalService } from './service/tribunal.service';
 import { AffaireService } from './service/affaire.service';
 import { UserService } from './service/user.service';
+import { FilterPipe } from './utilisateur/filter.pipe';
 
 
 
@@ -41,7 +42,8 @@ export class XhrInterceptor implements HttpInterceptor {
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    FilterPipe
 
   ],
   providers: [AppService, UserService, RoleService, TribunalService, AffaireService, {provide: HTTP_INTERCEPTORS, useClass: XhrInterceptor, multi: true}],
