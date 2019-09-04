@@ -11,10 +11,10 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { AppService } from './app.service';
-import { UserService } from './service/utilisateur.service';
 import { RoleService } from './service/role.service';
 import { TribunalService } from './service/tribunal.service';
 import { AffaireService } from './service/affaire.service';
+import { UserService } from './service/user.service';
 
 
 
