@@ -3,6 +3,7 @@ import { RoleComponent } from 'src/app/role/role.component';
 import { LoginComponent } from 'src/app/login/login.component';
 import { UserProfileComponent } from 'src/app/user-profile/user-profile.component';
 
+
 export const AdminLayoutRoutes: Routes = [
    /* { path: 'dashboard',      component: DashboardComponent }, */
    { path: '',               redirectTo: '/login', pathMatch: 'full'},
