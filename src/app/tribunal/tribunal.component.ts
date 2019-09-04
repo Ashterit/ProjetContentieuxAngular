@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { Tribunal } from 'src/app/model/tribunal';
-import { TribunalService } from '../../service/tribunal.service';
+import { Tribunal } from '../model/tribunal';
+import { TribunalService } from '../service/tribunal.service';
 
 
 
 @Component({
   selector: 'app-tribunal',
   templateUrl: './tribunal.component.html',
-  styleUrls: ['./tribunal.component.scss']
+  //styleUrls: ['./tribunal.component.scss']
 })
 export class TribunalComponent implements OnInit {
-  roles:any[];
-  role: Tribunal = new Tribunal();
+  tribunals:any[];
+  tribunal: Tribunal = new Tribunal();
   constructor(private tribunalService:TribunalService) { }
 
   ngOnInit() {
@@ -19,7 +19,8 @@ export class TribunalComponent implements OnInit {
   }
   locadTribunal() {
     this.tribunalService.getAllTribunal().subscribe(
-      data => {this.roles = data;},
+      data => {this.tribunals = data;},
       error => {console.log(error);}
     )
   }
+}

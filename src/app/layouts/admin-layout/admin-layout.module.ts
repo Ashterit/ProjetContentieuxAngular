@@ -16,11 +16,10 @@ import { ToastrModule } from 'ngx-toastr';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { LoginComponent } from '../../login/login.component';
 import { RoleComponent } from '../../role/role.component';
-<<<<<<< HEAD
-import { TribunalComponent } from '../../role/tribunal.component';
-=======
+import { TribunalComponent } from '../../tribunal/tribunal.component';
 import { UtilisateurComponent } from '../../utilisateur/utilisateur.component';
->>>>>>> cb5e8d18ad3d5af2ba102759b4529a95465a26b0
+import { AffaireComponent } from '../../affaire/affaire.component';
+
 
 @NgModule({
   imports: [
@@ -38,11 +37,9 @@ import { UtilisateurComponent } from '../../utilisateur/utilisateur.component';
     TypographyComponent,
     LoginComponent,
     RoleComponent,
-<<<<<<< HEAD
     TribunalComponent,
-=======
     UtilisateurComponent,
->>>>>>> cb5e8d18ad3d5af2ba102759b4529a95465a26b0
+    AffaireComponent,
     IconsComponent,
     MapsComponent,
     NotificationsComponent,
