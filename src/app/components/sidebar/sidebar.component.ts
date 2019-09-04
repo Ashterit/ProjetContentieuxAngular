@@ -7,15 +7,17 @@ declare interface RouteInfo {
     class: string;
 }
 export const ROUTES: RouteInfo[] = [
-    { path: '/dashboard', title: 'Dashboard',  icon: 'design_app', class: '' },
-    { path: '/icons', title: 'Icons',  icon:'education_atom', class: '' },
-    { path: '/maps', title: 'Maps',  icon:'location_map-big', class: '' },
-    { path: '/notifications', title: 'Notifications',  icon:'ui-1_bell-53', class: '' },
+    //{ path: '/dashboard', title: 'Dashboard',  icon: 'design_app', class: '' },
+    //{ path: '/icons', title: 'Icons',  icon:'education_atom', class: '' },
+    //{ path: '/maps', title: 'Maps',  icon:'location_map-big', class: '' },
+    //{ path: '/notifications', title: 'Notifications',  icon:'ui-1_bell-53', class: '' },
 
-    { path: '/user-profile', title: 'User Profile',  icon:'users_single-02', class: '' },
-    { path: '/table-list', title: 'Table List',  icon:'design_bullet-list-67', class: '' },
-    { path: '/typography', title: 'Typography',  icon:'text_caps-small', class: '' },
-    { path: '/upgrade', title: 'Upgrade to PRO',  icon:'objects_spaceship', class: 'active active-pro' }
+    { path: '/user', title: 'User Profile',  icon:'users_single-02', class: '' },
+    { path: '/role', title: 'Role',  icon:'users_circle-08', class: '' },
+    { path: '/affaire', title: 'Affaire',  icon:'files_single-copy-04', class: '' },
+    { path: '/tache', title: 'Tache',  icon:'files_paper', class: '' },
+    { path: '/tribunal', title: 'Tribunal',  icon:'business_bank', class: '' },
+    { path: '/tableau', title: 'Tableau de bord',  icon:'ui-1_calendar-60', class: 'active active-pro' }
 
 ];
 
