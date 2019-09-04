@@ -16,7 +16,10 @@ import { ToastrModule } from 'ngx-toastr';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { LoginComponent } from '../../login/login.component';
 import { RoleComponent } from '../../role/role.component';
+import { TribunalComponent } from '../../tribunal/tribunal.component';
 import { UtilisateurComponent } from '../../utilisateur/utilisateur.component';
+import { AffaireComponent } from '../../affaire/affaire.component';
+
 
 @NgModule({
   imports: [
@@ -34,7 +37,9 @@ import { UtilisateurComponent } from '../../utilisateur/utilisateur.component';
     TypographyComponent,
     LoginComponent,
     RoleComponent,
+    TribunalComponent,
     UtilisateurComponent,
+    AffaireComponent,
     IconsComponent,
     MapsComponent,
     NotificationsComponent,

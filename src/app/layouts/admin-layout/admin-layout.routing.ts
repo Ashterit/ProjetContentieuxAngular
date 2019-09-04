@@ -2,6 +2,8 @@ import { Routes } from '@angular/router';
 import { RoleComponent } from '../../role/role.component';
 import { LoginComponent } from '../../login/login.component';
 import { UtilisateurComponent } from '../../utilisateur/utilisateur.component';
+import { TribunalComponent } from '../../tribunal/tribunal.component';
+import { AffaireComponent } from '../../affaire/affaire.component';
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -9,7 +11,10 @@ export const AdminLayoutRoutes: Routes = [
   { path: '',               redirectTo: '/login', pathMatch: 'full'},
   { path: 'role',           component: RoleComponent },
   {path: 'login',           component: LoginComponent},
-  {path: 'utilisateurs', component: UtilisateurComponent}
+  {path: 'utilisateurs', component: UtilisateurComponent},
+  {path: 'user',            component: UtilisateurComponent},
+  {path: 'tribunal',        component: TribunalComponent},
+  {path: 'affaire',         component: AffaireComponent},
 ]
   /*  { path: 'affaire',              component: AffaireComponent},
     { path: 'table-list',     component: TableListComponent },
